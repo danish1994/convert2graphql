@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Danish Kamal",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:danish1994/convert2graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "json",
+    "convert to graphql",
+    "graphql string",
+    "facebook",
+  ]
 }
