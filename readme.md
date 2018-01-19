@@ -69,18 +69,24 @@ Get GraphQL String:
 ```js
 query.getGraphQLString()
 
-// Output Will Be
-// {
-//     getChats (chatOption: { sortLatest: true  limit: 1 }msgOption: { sortLatest: false  limit: 5 } timestamp: "Sat Jan 20 2018 01:56:37 GMT+0530 (IST)" ) {
-//         name
-//         msgs{
-//             msg  createdBy
-//         }
-//     }
-    
-//     getMsgs (msgOption: { sortLatest: true  limit: 1 } chatSlug: "slug" ) {
-//         msg 
-//         createdBy
-//     }
-// }
+
+/**
+ * 
+ * Following Output is Generated
+ * 
+ * 
+ * {
+ *   getChats (chatOption: { sortLatest: true  limit: 1 }msgOption: { sortLatest: false  limit: 5 } timestamp: "Sat Jan 20 2018 01:56:37 GMT+0530 (IST)" ) {
+ *       name
+ *       msgs{
+ *           msg  createdBy
+ *       }
+ *   }
+ *   
+ *   getMsgs (msgOption: { sortLatest: true  limit: 1 } chatSlug: "slug" ) {
+ *       msg 
+ *       createdBy
+ *   }
+ * } 
+ */
 ```
