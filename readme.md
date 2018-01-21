@@ -1,5 +1,7 @@
 # Convert2GraphQL
 
+[![NPM](https://nodei.co/npm/convert2graphql.png)](https://nodei.co/npm/convert2graphql/)
+
 ### This module helps to convert JSON objects into GraphQL strings needed for API calls.
 
 #### User can add as many queries/mutations (either of them) in a single object to run them parallely.
