@@ -55,9 +55,13 @@ module.exports = class {
         } else if (obj.returnArgs) {
             return `${obj.name}: {${args}}`
         } else {
-            this.queries.push(`${obj.name} ${args} { 
-                ${nodes}   
-            }`)
+            if (nodes == '') {
+                this.queries.push(`${obj.name} ${args}`)
+            } else {
+                this.queries.push(`${obj.name} ${args} { 
+                    ${nodes}   
+                }`)
+            }
         }
     }
 
