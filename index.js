@@ -45,9 +45,13 @@ module.exports = class {
         }
 
         if (obj.returnNode) {
-            return `${obj.name}{ 
-                ${nodes}   
-            }`
+            if (nodes == '') {
+                return `${obj.name}`
+            } else {
+                return `${obj.name}{ 
+                    ${nodes}   
+                }`
+            }
         } else if (obj.returnArgs) {
             return `${obj.name}: {${args}}`
         } else {
